@@ -65,16 +65,15 @@ Route::get('/concatti', function() {
 
     $contacts = [
         'segreteria' => [
-            'phone' => '011/4367583',
+            'telefono' => '011/4367583',
             'email' => 'segreteria@gb.it'
         ],
         'consulenze' => [
-            'phone' => '011/6333458',
+            'telefono' => '011/6333458',
             'email' => 'consulenze@gb.it'
         ]
     ];
-
-    bb($contacts);
+    // dd($contacts);
 
     return view('contacts', $contacts);
 })->name('contacts');

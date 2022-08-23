@@ -8,9 +8,42 @@
 </head>
 <body>
     <div class="contacts">
-        {{-- @foreach ($contacts as $key => $item)
-            
-        @endforeach --}}
+        <div class="office">
+            <h2>Segretieria: </h2>
+            <ul>
+                @foreach ($segreteria as $key => $contact)
+                    <li class="contact-list">
+                       <span>{{$key}} :</span> 
+                       <span>{{ $contact }}</span>
+                    </li>
+                @endforeach
+            </ul>
+        </div>
+        <div class="counseling">
+            <h2>Consulenza Scolastica: </h2>
+            <ul>
+                @foreach ($consulenze as $key => $contact)
+                    <li class="contact-list">
+                        <span>{{$key}} :</span> 
+                        <span>{{ $contact }}</span>
+                    </li>
+                @endforeach
+            </ul>
+        </div>
+    </div>
+
+    <div class="return-home">
+        <a href="/">Ritorna alla Home</a>
     </div>
 </body>
 </html>
+
+<style>
+    ul {
+        list-style-type: none;
+    }
+
+    .contact-list span:first-child{
+        text-transform: capitalize;
+    }
+</style>
