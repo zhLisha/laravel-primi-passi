@@ -33,7 +33,7 @@
     </div>
 
     <div class="return-home">
-        <a href="/">Ritorna alla Home</a>
+        <a href="{{route('home')}}">Ritorna alla Home</a>
     </div>
 </body>
 </html>
